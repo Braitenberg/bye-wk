@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "WK Blocker",
+  "version": "1.0.0",
+  "description": "Blokkeert WK-gerelateerd nieuws op grote nieuwswebsites",
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": ["patterns.txt"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.nos.nl/*",
+        "*://*.nu.nl/*",
+        "*://*.ad.nl/*",
+        "*://*.telegraaf.nl/*",
+        "*://*.volkskrant.nl/*",
+        "*://*.nrc.nl/*",
+        "*://*.rtlnieuws.nl/*",
+        "*://*.parool.nl/*",
+        "*://*.trouw.nl/*",
+        "*://*.fd.nl/*",
+        "*://*.metronieuws.nl/*",
+        "*://*.hln.be/*",
+        "*://*.nieuwsblad.be/*",
+        "*://*.bbc.com/*",
+        "*://*.cnn.com/*",
+        "*://*.theguardian.com/*",
+        "*://*.reuters.com/*",
+        "*://*.apnews.com/*",
+        "*://*.nytimes.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

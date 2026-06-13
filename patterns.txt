@@ -1,0 +1,48 @@
+# One regex pattern per line (case-insensitive, no delimiters needed)
+# Lines starting with # and blank lines are ignored
+
+\bwk\b
+wereldkampioenschap
+world\s*cup
+\bfifa\b
+wk\s*voetbal
+wk\s*2026
+oranjelegioen
+\boranje\b
+meer\s*wk
+ronald koeman
+
+# Oranje WK 2026 selectie
+# Keepers
+\bflekken\b
+\broefs\b
+\bverbruggen\b
+
+# Verdedigers
+\bak[eé]\b
+\bvan dijk\b
+\bdumfries\b
+\bhato\b
+\bvan hecke\b
+\bgeertruida\b
+\bvan de ven\b
+
+# Middenvelders
+\bde jong\b
+\bgravenberch\b
+\bkoopmeiners\b
+\breijnders\b
+\bde roon\b
+guus til
+\btimber\b
+\bwieffer\b
+
+# Aanvallers
+\bbrobbey\b
+\bdepay\b
+\bgakpo\b
+\bkluivert\b
+noa lang
+\bmalen\b
+\bsummerville\b
+\bweghorst\b
