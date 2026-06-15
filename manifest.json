@@ -1,11 +1,22 @@
 {
   "manifest_version": 2,
+  "data_collection_permissions": {
+      "required": ["none"]
+    },
   "name": "WK Blocker",
   "version": "1.0.0",
   "description": "Blokkeert WK-gerelateerd nieuws op grote nieuwswebsites",
   "permissions": [
     "activeTab"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wkblocker@bye-wk",
+      "data_collection_permissions": {
+      "required": ["none"]
+    }
+    }
+  },
   "web_accessible_resources": ["patterns.txt"],
   "content_scripts": [
     {
